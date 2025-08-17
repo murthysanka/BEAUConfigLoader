@@ -1,0 +1,18 @@
+# config/base.yaml
+app: { name: TestLoadConfig, schema_version: 1 }
+
+sftp:
+  profiles:
+    main:
+      host: sftp.company.com
+      port: 22
+      username_secret: sftp_main_user   # logical key resolved by secrets_util
+      key_secret: sftp_main_key
+
+db:
+  connections:
+    reporting:
+      driver: "ODBC Driver 18 for SQL Server"
+      server: "sql01.local"
+      database: "Sales"
+      auth_secret: sql_report_ro

@@ -1,0 +1,12 @@
+# config/dev.yaml (overrides only)
+sftp:
+  profiles:
+    main:
+      host: sftp-dev.company.com
+      key_secret: sftp_main_key_dev
+      port: 22
+db:
+  connections:
+    reporting:
+      server: "sql-dev.local"
+      abc: "test"

@@ -1,0 +1,11 @@
+# config/test.yaml (overrides only)
+sftp:
+  profiles:
+    main:
+      host: sftp-test.company.com
+      key_secret: sftp_main_key_test
+db:
+  connections:
+    reporting:
+      server: "sql-test.local"
+      auth_secret: sql_report_test

@@ -1,4 +1,4 @@
-# config-loader
+# config_loader_util
 
 Loads `base.yaml`, overlays `<env>.yaml`, then optional `local.yaml`.
 - Strict YAML (errors on duplicate keys)
